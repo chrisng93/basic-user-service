@@ -46,6 +46,6 @@ func (uc UserController) CreateUser(w http.ResponseWriter, r *http.Request, p ht
     fmt.Fprintf(w, "%s", uj)
 }
 
-func (uc UserController) DeleteUser(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
+func (uc UserController) RemoveUser(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
     w.WriteHeader(200)
 }
